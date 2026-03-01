@@ -1,0 +1,26 @@
+{
+  "name": "unicommerce-uniware-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Uniware APIs",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "build:manifest": "node scripts/generate-manifest.mjs",
+    "start": "node src/index.js",
+    "start:stdio": "MCP_TRANSPORT=stdio node src/index.js",
+    "start:http": "MCP_TRANSPORT=http node src/index.js",
+    "dev": "node --watch src/index.js",
+    "dev:http": "MCP_TRANSPORT=http node --watch src/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "uniware",
+    "unicommerce",
+    "api"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.18.0",
+    "zod": "^3.23.8"
+  }
+}

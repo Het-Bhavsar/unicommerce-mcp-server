@@ -1,0 +1,1530 @@
+[
+  {
+    "code": "200",
+    "description": "Successful request"
+  },
+  {
+    "code": "202",
+    "description": "Request under process"
+  },
+  {
+    "code": "0",
+    "description": "UNKNOWN_ERROR"
+  },
+  {
+    "code": "1",
+    "description": "USER_NOT_LOGGED_IN"
+  },
+  {
+    "code": "2",
+    "description": "AUTHENTICATION_FAILURE"
+  },
+  {
+    "code": "3",
+    "description": "ACCESS_DENIED"
+  },
+  {
+    "code": "4",
+    "description": "INVALID_URI"
+  },
+  {
+    "code": "5",
+    "description": "SESSION_EXPIRED_DUE_TO_MAX_SESSION_LIMIT"
+  },
+  {
+    "code": "400",
+    "description": "Fields are with validation errors"
+  },
+  {
+    "code": "401",
+    "description": "authToken expired/Invalid authToken"
+  },
+  {
+    "code": "1000",
+    "description": "INVALID_REQUEST"
+  },
+  {
+    "code": "1001",
+    "description": "MISSING_REQUIRED_PARAMETERS"
+  },
+  {
+    "code": "1002",
+    "description": "INVALID_FORMAT"
+  },
+  {
+    "code": "1003",
+    "description": "INVALID_ADDRESS_REFERENCE"
+  },
+  {
+    "code": "1003",
+    "description": "Shelf is already added to another sub cycle count."
+  },
+  {
+    "code": "1004",
+    "description": "GENERIC_WARNING"
+  },
+  {
+    "code": "10001",
+    "description": "INVALID_ITEM_TYPE"
+  },
+  {
+    "code": "10002",
+    "description": "INVALID_VENDOR_ID"
+  },
+  {
+    "code": "10003",
+    "description": "INVALID_ITEM_ID"
+  },
+  {
+    "code": "10004",
+    "description": "INVALID_VENDOR_AGREEMENT_ID"
+  },
+  {
+    "code": "10005",
+    "description": "DUPLICATE_PURCHASE_ORDER_CODE"
+  },
+  {
+    "code": "10006",
+    "description": "DUPLICATE_ITEM_SKU_CODE"
+  },
+  {
+    "code": "10006",
+    "description": "INVALID_ITEM_SKU_CODE"
+  },
+  {
+    "code": "10007",
+    "description": "INVALID_VENDOR_AGREEMENT_STATUS"
+  },
+  {
+    "code": "10008",
+    "description": "DUPLICATE_VENDOR_ITEM_TYPE"
+  },
+  {
+    "code": "10009",
+    "description": "INVALID_VENDOR_ITEM_TYPE"
+  },
+  {
+    "code": "10010",
+    "description": "INVALID_SECTION"
+  },
+  {
+    "code": "10011",
+    "description": "DUPLICATE_SHIPPING_PROVIDER_LOCATION"
+  },
+  {
+    "code": "10012",
+    "description": "DUPLICATE_CATEGORY_CODE"
+  },
+  {
+    "code": "10013",
+    "description": "INVALID_CATEGORY_CODE"
+  },
+  {
+    "code": "10014",
+    "description": "INVALID_ITEM_CODE"
+  },
+  {
+    "code": "10015",
+    "description": "DUPLICATE_TAX_TYPE_CODE"
+  },
+  {
+    "code": "10016",
+    "description": "DUPLICATE_VENDOR_AGREEMENT"
+  },
+  {
+    "code": "10017",
+    "description": "INVALID_VENDOR_AGREEMENT"
+  },
+  {
+    "code": "10018",
+    "description": "INVALID_FACILITY_ITEM_TYPE"
+  },
+  {
+    "code": "10020",
+    "description": "DUPLICATE_VENDOR_CODE"
+  },
+  {
+    "code": "10020",
+    "description": "INVALID_TAX_TYPE_CODE"
+  },
+  {
+    "code": "10021",
+    "description": "INVALID_VENDOR_CODE"
+  },
+  {
+    "code": "10022",
+    "description": "DUPLICATE_BILLING_PARTY_CODE"
+  },
+  {
+    "code": "10023",
+    "description": "INVALID_BILLING_PARTY_CODE"
+  },
+  {
+    "code": "10023",
+    "description": "DUPLICATE_CATEGORY_SECTION_MAPPING"
+  },
+  {
+    "code": "10024",
+    "description": "INVALID_PARTY_CONTACT_TYPE"
+  },
+  {
+    "code": "10025",
+    "description": "DUPLICATE MOBILE NUMBER"
+  },
+  {
+    "code": "10034",
+    "description": "INVALID_SALE_ORDER_ITEM_ALTERNATE_SELECTION"
+  },
+  {
+    "code": "10035",
+    "description": "INVALID_SALE_ORDER_ITEM_ALTERNATE_ID"
+  },
+  {
+    "code": "10040",
+    "description": "UNABLE_TO_FETCH_SHIPPING_PROVIDER_INFORMATION"
+  },
+  {
+    "code": "10050",
+    "description": "INVALID_ITEM_STATE"
+  },
+  {
+    "code": "10051",
+    "description": "ITEM_DETAILS_NOT_EXPTECTED"
+  },
+  {
+    "code": "10052",
+    "description": "ITEM_DETAILS_INVALID_FORMAT"
+  },
+  {
+    "code": "10053",
+    "description": "ITEMS_DETAILING_MANDATORY_BEFORE_PUTAWAY"
+  },
+  {
+    "code": "10054",
+    "description": "ITEMS_LABELLING_MANDATORY_BEFORE_QC"
+  },
+  {
+    "code": "10054",
+    "description": "INVALID_CUSTOM_FIELD"
+  },
+  {
+    "code": "10055",
+    "description": "ITEM_NOT_DETAILED_FOR_INVOICE"
+  },
+  {
+    "code": "10055",
+    "description": "INVALID_INFLOW_RECEIPT_ITEM_STATE"
+  },
+  {
+    "code": "10056",
+    "description": "INVOICE_NOT_GENERATED"
+  },
+  {
+    "code": "10057",
+    "description": "INVOICE_NOT_GENERATED_AS_ALL_ORDER_ITEMS_CANCELLED"
+  },
+  {
+    "code": "12324",
+    "description": "IMCOMPLETE_BATCH_FIELDS"
+  },
+  {
+    "code": "12325",
+    "description": "BATCH_CODE_EXITS_IN_SAME_GRN_ITEMS"
+  },
+  {
+    "code": "12326",
+    "description": "INVALID_BATCH_CODE"
+  },
+  {
+    "code": "12327",
+    "description": "Batch code does not exist"
+  },
+  {
+    "code": "12328",
+    "description": "Empty batch code"
+  },
+  {
+    "code": "20001",
+    "description": "INVALID_SHIPPING_METHOD"
+  },
+  {
+    "code": "20001",
+    "description": "INVALID_SALE_ORDER_ITEM_TYPE"
+  },
+  {
+    "code": "20002",
+    "description": "INVALID_PACKAGE_SPECIFICATIONS"
+  },
+  {
+    "code": "20003",
+    "description": "INVALID_PACKAGE_STATE"
+  },
+  {
+    "code": "20004",
+    "description": "INVALID_SHIPPING_PACKAGE_ID"
+  },
+  {
+    "code": "20005",
+    "description": "INVALID_SHIPPING_PROVIDER_ID"
+  },
+  {
+    "code": "20006",
+    "description": "INVALID_SHIPPING_MANIFEST_ID"
+  },
+  {
+    "code": "20007",
+    "description": "SHIPPING_PROVIDER_MISMATCH_PACKAGE_TO_MANIFEST"
+  },
+  {
+    "code": "20008",
+    "description": "SALE_ORDER_ONE_OR_MORE_ITEMS_ARE_CANCELLED"
+  },
+  {
+    "code": "20009",
+    "description": "SALE_ORDER_IS_ON_HOLD"
+  },
+  {
+    "code": "20010",
+    "description": "INVALID_POD_CODE"
+  },
+  {
+    "code": "20010",
+    "description": "LOCATION_NOT_SERVICEABLE_WITH_GIVEN_PROVIDER_METHOD"
+  },
+  {
+    "code": "20011",
+    "description": "INVALID_SHIPPING_PROVIDER_CODE"
+  },
+  {
+    "code": "20011",
+    "description": "NO_TRACKING_NUMBER_AVAILABLE_FOR_GIVEN_PROVIDER"
+  },
+  {
+    "code": "20011",
+    "description": "INVALID_SHIPPING_MANIFEST_ID"
+  },
+  {
+    "code": "20012",
+    "description": "INVALID_SHIPPING_PACKAGE_CODE"
+  },
+  {
+    "code": "20013",
+    "description": "INVALID_SHIPPING_PROVIDER_METHOD_ID"
+  },
+  {
+    "code": "20014",
+    "description": "INVALID_SHIPPING_PROVIDER_METHOD_TRACKING_NUMBER_GENERATION"
+  },
+  {
+    "code": "20015",
+    "description": "INVALID_SHIPPING_MANIFEST_CODE"
+  },
+  {
+    "code": "20015",
+    "description": "REFETCH_LABEL_NOT_ALLOWED"
+  },
+  {
+    "code": "20016",
+    "description": "SHIPPING_MANIFEST_ITEM_LIMIT_REACHED"
+  },
+  {
+    "code": "20016",
+    "description": "COURIER_MANAGEMENT_SWITCHED_OFF"
+  },
+  {
+    "code": "20017",
+    "description": "INVALID_SHIPPING_PROVIDER_CONNECTOR_CODE"
+  },
+  {
+    "code": "20018",
+    "description": "INVALID_SHIPPING_PROVIDER_CREDENTIALS"
+  },
+  {
+    "code": "20019",
+    "description": "SHIPPING_PROVIDER_ALREADY_ADDED"
+  },
+  {
+    "code": "20022",
+    "description": "INVALID_BATCH_GROUP_CODE"
+  },
+  {
+    "code": "20050",
+    "description": "INVALID_SHIPPING_PACKAGE_STATE"
+  },
+  {
+    "code": "20053",
+    "description": "BATCH_GROUP_NOT_EXIST"
+  },
+  {
+    "code": "20054",
+    "description": "BATCH_GROUP_NOT_LINKED_WITH_ITEM_TYPE"
+  },
+  {
+    "code": "20056",
+    "description": "BATCHING_VALIDATION_ERROR"
+  },
+  {
+    "code": "20057",
+    "description": "STAGING_SHELF"
+  },
+  {
+    "code": "30001",
+    "description": "INVALID_BUCKET_CODE"
+  },
+  {
+    "code": "30002",
+    "description": "DUPLICATE_CODE"
+  },
+  {
+    "code": "30003",
+    "description": "INVALID_SHELF_CODE"
+  },
+  {
+    "code": "30004",
+    "description": "INVALID_PICKLIST_CODE"
+  },
+  {
+    "code": "30005",
+    "description": "INVALID_PICKLIST_STATE"
+  },
+  {
+    "code": "30006",
+    "description": "INVALID_PICKSLOT_STATE"
+  },
+  {
+    "code": "30007",
+    "description": "INVALID_ROLE_CODE"
+  },
+  {
+    "code": "40001",
+    "description": "DUPLICATE_SALE_ORDER"
+  },
+  {
+    "code": "40001",
+    "description": "TENANT_ALREADY_EXISTS"
+  },
+  {
+    "code": "40002",
+    "description": "DUPLICATE_SALE_ORDER_ITEM"
+  },
+  {
+    "code": "40002",
+    "description": "TENANT_CONFIG_ERROR"
+  },
+  {
+    "code": "40003",
+    "description": "INVALID_SALE_ORDER_ITEM_CODE"
+  },
+  {
+    "code": "40003",
+    "description": "INVALID_TENANT_URL"
+  },
+  {
+    "code": "40004",
+    "description": "INVALID_SALE_ORDER_ITEM_ID"
+  },
+  {
+    "code": "40004",
+    "description": "INVALID_FACILITY_TYPE"
+  },
+  {
+    "code": "40005",
+    "description": "INVALID_SALE_ORDER_CODE"
+  },
+  {
+    "code": "40005",
+    "description": "FACILITY_CONFIG_ERROR"
+  },
+  {
+    "code": "40006",
+    "description": "SALE_ORDER_ITEM_ALREADY_CANCELLED"
+  },
+  {
+    "code": "40007",
+    "description": "SALE_ORDER_ITEM_DISPATCHED"
+  },
+  {
+    "code": "40008",
+    "description": "SALE_ORDER_ONE_OR_MORE_ITEMS_ARE_DISPATCHED"
+  },
+  {
+    "code": "40009",
+    "description": "SALE_ORDER_ALL_ITEMS_ARE_DISPATCHED"
+  },
+  {
+    "code": "40010",
+    "description": "INVALID_SALE_ORDER_ITEM_STATE"
+  },
+  {
+    "code": "40011",
+    "description": "SALE_ORDER_INTERNAL_ERROR"
+  },
+  {
+    "code": "40011",
+    "description": "INVALID_STATE_CODE"
+  },
+  {
+    "code": "40012",
+    "description": "INVALID_COUNTRY_CODE"
+  },
+  {
+    "code": "40012",
+    "description": "INVALID_SALE_ORDER_LINE_ITEM"
+  },
+  {
+    "code": "40013",
+    "description": "MISSING_SALE_ORDER_ITEMS"
+  },
+  {
+    "code": "40020",
+    "description": "INVALID_CURRENCY_CODE"
+  },
+  {
+    "code": "40021",
+    "description": "CURRENCY_CONVERSION_RATE_NOT_AVAILABLE"
+  },
+  {
+    "code": "40023",
+    "description": "BILLING_SHIPPING_ADDRESS_REQUIRED_FOR_FACILITY"
+  },
+  {
+    "code": "50001",
+    "description": "INVALID_USER_ID"
+  },
+  {
+    "code": "60001",
+    "description": "INVALID_ITEM_ALLOCATION"
+  },
+  {
+    "code": "60002",
+    "description": "ITEM_ALREADY_ALLOCATED"
+  },
+  {
+    "code": "60003",
+    "description": "INVENTORY_NOT_FOUND_AT_EXPECTED_LOCATION"
+  },
+  {
+    "code": "60004",
+    "description": "INVENTORY_NOT_AVAILABLE"
+  },
+  {
+    "code": "70001",
+    "description": "INVALID_WAREHOUSE_CONFIGURATION"
+  },
+  {
+    "code": "80001",
+    "description": "INVALID_PURCHASE_ORDER_ID"
+  },
+  {
+    "code": "80002",
+    "description": "INVALID_PURCHASE_ORDER_STATE"
+  },
+  {
+    "code": "80003",
+    "description": "ITEM_NOT_CONFIGURED_TO_PURCHASE_FROM_VENDOR"
+  },
+  {
+    "code": "80004",
+    "description": "ITEM_TYPE_ALREADY_ADDED_TO_PURCHASE_ORDER"
+  },
+  {
+    "code": "80005",
+    "description": "ITEM_TYPE_NOT_YET_ADDED_TO_PURCHASE_ORDER"
+  },
+  {
+    "code": "80006",
+    "description": "ITEM_QUANTITY_CANNOT_BE_LESS_THAN_RECEIVED"
+  },
+  {
+    "code": "80007",
+    "description": "VENDOR_AGREEMENT_NOT_ACTIVE"
+  },
+  {
+    "code": "80008",
+    "description": "RECEIVED_QUANTITY_CANNOT_EXCEED_PENDING_QUANTITY"
+  },
+  {
+    "code": "80009",
+    "description": "INVALID_INFLOW_RECEIPT_ITEM_ID"
+  },
+  {
+    "code": "80010",
+    "description": "INVALID_INFLOW_RECEIPT_ID"
+  },
+  {
+    "code": "80011",
+    "description": "INVALID_INFLOW_RECEIPT_STATE"
+  },
+  {
+    "code": "80012",
+    "description": "INFLOW_RECEIPT_REJECTED_QTY_CANNOT_EXCEED_TOTAL"
+  },
+  {
+    "code": "80013",
+    "description": "INFLOW_RECEIPT_SHELFS_ARE_NOT_ASSIGNED_TO_ALL_ITEMS"
+  },
+  {
+    "code": "80014",
+    "description": "INFLOW_RECEIPT_NEW_PUTAWAY_QTY_CANNOT_EXCEED_CURRENT"
+  },
+  {
+    "code": "80015",
+    "description": "INVALID_INFLOW_RECEIPT_CODE"
+  },
+  {
+    "code": "80015",
+    "description": "NO_ITEM_TO_PUTAWAY"
+  },
+  {
+    "code": "80015",
+    "description": "PURCHASE_CART_NOT_INITIALIZED"
+  },
+  {
+    "code": "80016",
+    "description": "NO_ITEM_ADDED_TO_PURCHASE_ORDER"
+  },
+  {
+    "code": "80016",
+    "description": "INVALID_PURCHASE_ORDER_ITEM_ID"
+  },
+  {
+    "code": "80016",
+    "description": "ACTION_ONLY_APPLICABLE_FOR_BARCODING_BEFORE_GRN_CONFIGURATION"
+  },
+  {
+    "code": "80017",
+    "description": "EDIT_NOT_ALLOWED_AFTER_ITEMS_LABELLED"
+  },
+  {
+    "code": "80017",
+    "description": "ACTION_NOT_APPLICABLE_FOR_BARCODING_BEFORE_GRN_CONFIGURATION"
+  },
+  {
+    "code": "80017",
+    "description": "ACTION_NOT_APPLICABLE_FOR_THIRD_PARTY_SHIPPING"
+  },
+  {
+    "code": "80019",
+    "description": "ITEM_CODES_ALREADY_CREATED"
+  },
+  {
+    "code": "80020",
+    "description": "ACTION_NOT_APPLICABLE_FOR_TRACEABLE_ITEMS"
+  },
+  {
+    "code": "80021",
+    "description": "ACTION_APPLICABLE_FOR_TRACEABLE_ITEMS"
+  },
+  {
+    "code": "80022",
+    "description": "NO_SUCH_ITEM_IN_PURCHASE_CART"
+  },
+  {
+    "code": "80022",
+    "description": "VENDOR_DETAILS_INCOMPLETE"
+  },
+  {
+    "code": "80050",
+    "description": "PURCHASE_ORDER_AMENDMENT_NOT_ALLOWED_AFTER_GRN"
+  },
+  {
+    "code": "80051",
+    "description": "DUPLICATE_ITEM_CODE"
+  },
+  {
+    "code": "80060",
+    "description": "INVALID_PURCHASE_ORDER_CODE"
+  },
+  {
+    "code": "90001",
+    "description": "INVALID_REVERSE_PICKUP_ACTION"
+  },
+  {
+    "code": "90002",
+    "description": "REVERSE_PICKUP_ALREADY_CREATED_FOR_THIS_ITEM"
+  },
+  {
+    "code": "90003",
+    "description": "INVALID_REVERSE_PICKUP_ID"
+  },
+  {
+    "code": "90004",
+    "description": "INVALID_REVERSE_PICKUP_STATE"
+  },
+  {
+    "code": "90005",
+    "description": "REVERSE_PICKUP_NOT_FOUND"
+  },
+  {
+    "code": "90005",
+    "description": "INVALID_RESHIPMENT_ACTION"
+  },
+  {
+    "code": "90006",
+    "description": "RESHIPMENT_ALREADY_CREATED_FOR_THIS_PACKAGE"
+  },
+  {
+    "code": "90006",
+    "description": "INVALID_RESHIPMENT_ID"
+  },
+  {
+    "code": "90007",
+    "description": "INVALID_RETURN_MANIFEST_ID"
+  },
+  {
+    "code": "90008",
+    "description": "INVALID_RETURN_MANIFEST_STATE"
+  },
+  {
+    "code": "90009",
+    "description": "INVALID_REVERSE_PICKUP_CODE"
+  },
+  {
+    "code": "90010",
+    "description": "AUTO_REVERSE_PICKUP_LIMIT"
+  },
+  {
+    "code": "99900",
+    "description": "ONLY_OWNER_CAN_DELETE_COMMENT"
+  },
+  {
+    "code": "100001",
+    "description": "INVALID_EXPORT_JOB_TYPE_NAME"
+  },
+  {
+    "code": "100002",
+    "description": "INVALID_EXPORT_JOB_COLUMN"
+  },
+  {
+    "code": "100003",
+    "description": "INVALID_EXPORT_JOB_FILTER"
+  },
+  {
+    "code": "100004",
+    "description": "INVALID_EXPORT_JOB_FILTER_VALUE"
+  },
+  {
+    "code": "100005",
+    "description": "INVALID_EXPORT_JOB_FILTER_SELECT_VALUE"
+  },
+  {
+    "code": "100006",
+    "description": "INVALID_IMPORT_JOB_TYPE_NAME"
+  },
+  {
+    "code": "100007",
+    "description": "INVALID_IMPORT_JOB_COLUMN"
+  },
+  {
+    "code": "100008",
+    "description": "INVALID_IMPORT_JOB_FILTER"
+  },
+  {
+    "code": "100009",
+    "description": "INVALID_IMPORT_JOB_FILTER_VALUE"
+  },
+  {
+    "code": "100010",
+    "description": "INVALID_IMPORT_JOB_FILTER_SELECT_VALUE"
+  },
+  {
+    "code": "100011",
+    "description": "INVALID_COLUMN_ENTRIES"
+  },
+  {
+    "code": "100012",
+    "description": "INVALID_IMPORT_JOB_TYPE"
+  },
+  {
+    "code": "100012",
+    "description": "INVALID_TAG"
+  },
+  {
+    "code": "100013",
+    "description": "INVALID_IMPORT_GROUP"
+  },
+  {
+    "code": "100014",
+    "description": "UNABLE_TO_FIND_IMPORT_JOB_TYPE"
+  },
+  {
+    "code": "100014",
+    "description": "INVALID_STATE"
+  },
+  {
+    "code": "100015",
+    "description": "INVALID_SHIPPING_PROVIDER_METHOD"
+  },
+  {
+    "code": "100016",
+    "description": "INVALID_SHIPPING_PROVIDER_LOCATION"
+  },
+  {
+    "code": "100017",
+    "description": "INVALID_SHIPPING_PROVIDER_REGION"
+  },
+  {
+    "code": "100018",
+    "description": "ACTION_NOT_APPLICABLE_FOR_PRE_ALLOCATED_SHIPPING_PROVIDER"
+  },
+  {
+    "code": "100019",
+    "description": "SHIPPING_PROVIDER_ALREADY_ALLOCATED"
+  },
+  {
+    "code": "100020",
+    "description": "DUPLICATE_TRACKING_NUMBER"
+  },
+  {
+    "code": "100021",
+    "description": "SHIPPING_PROVIDER_NOT_YET_ALLOCATED"
+  },
+  {
+    "code": "100022",
+    "description": "ACTION_APPLICABLE_FOR_MANUAL_TRACKING_NUMBER_GENERATION"
+  },
+  {
+    "code": "100023",
+    "description": "MANUAL_TRACKING_NUMBER_NOT_ASSIGNED"
+  },
+  {
+    "code": "100024",
+    "description": "INVALID_USER_WIDGET"
+  },
+  {
+    "code": "100025",
+    "description": "INVALID_SHIPPING_PACKAGE_TYPE_ID"
+  },
+  {
+    "code": "100026",
+    "description": "INVALID_SYSTEM_CONFIG_NAME"
+  },
+  {
+    "code": "100028",
+    "description": "INVALID_DATE"
+  },
+  {
+    "code": "100029",
+    "description": "DUPLICATE_SHIPPING_PROVIDER_ALLOCATION_RULE"
+  },
+  {
+    "code": "100030",
+    "description": "INVALID_SHIPPING_PROVIDER_ALLOCATION_RULE"
+  },
+  {
+    "code": "100031",
+    "description": "DUPLICATE_TAX_TYPE_CONFIGURATION"
+  },
+  {
+    "code": "100032",
+    "description": "INVALID_TAX_TYPE_CONFIGURATION_ID"
+  },
+  {
+    "code": "100032",
+    "description": "INVALID_ALLOCATION_CRITERIA"
+  },
+  {
+    "code": "100033",
+    "description": "TAX_TYPE_NOT_CONFIGURED"
+  },
+  {
+    "code": "100034",
+    "description": "INVALID_TAX_TYPE_CONFIGURATION_RANGE"
+  },
+  {
+    "code": "100050",
+    "description": "INVALID_CHANNEL_CODE"
+  },
+  {
+    "code": "100051",
+    "description": "CHANNEL_NOT_CONFIGURED"
+  },
+  {
+    "code": "100052",
+    "description": "CHANNEL_ALREADY_ADDED"
+  },
+  {
+    "code": "100053",
+    "description": "INVALID_CHANNEL_CREDENTIALS"
+  },
+  {
+    "code": "100054",
+    "description": "INVALID_CHANNEL_CONNECTOR"
+  },
+  {
+    "code": "100054",
+    "description": "INVALID_CHANNEL_CONNECTOR_PARAMETER"
+  },
+  {
+    "code": "100054",
+    "description": "INVALID_SCRIPT"
+  },
+  {
+    "code": "100055",
+    "description": "DUPLICATE_CHANNEL_SKU_CODE"
+  },
+  {
+    "code": "100055",
+    "description": "TRACKING_STATUS_UPDATE_DISABLED"
+  },
+  {
+    "code": "100056",
+    "description": "INVALID_CHANNEL_ITEM_TYPE"
+  },
+  {
+    "code": "100056",
+    "description": "INVALID_SAMPLE_TEMPLATE"
+  },
+  {
+    "code": "100057",
+    "description": "DUPLICATE_UNMAPPED_SOURCE_ITEM_TYPE"
+  },
+  {
+    "code": "100058",
+    "description": "DUPLICATE_SOURCE_ITEM_TYPE"
+  },
+  {
+    "code": "100059",
+    "description": "DUPLICATE_CUSTOMER_CODE"
+  },
+  {
+    "code": "100060",
+    "description": "INVALID_QUANTITY_NOT_FOUND_VALUE"
+  },
+  {
+    "code": "100061",
+    "description": "INVALID_CHANNEL_NAME"
+  },
+  {
+    "code": "100061",
+    "description": "CANNOT_DELETE_SYSTEM_GENERATED_COMMENT"
+  },
+  {
+    "code": "100062",
+    "description": "NOTIFICATION_ERROR"
+  },
+  {
+    "code": "100063",
+    "description": "PENDENCY_CONFIGURATION_NOT_ENABLED"
+  },
+  {
+    "code": "100064",
+    "description": "ERROR_UPDATING_PENDENCY"
+  },
+  {
+    "code": "100065",
+    "description": "UNABLE_TO_LOG_IN"
+  },
+  {
+    "code": "100070",
+    "description": "SHIPPING_PROVIDER_STATUS_MAPPING_NOT_FOUND"
+  },
+  {
+    "code": "100071",
+    "description": "INVALID_SALE_ORDER_STATE"
+  },
+  {
+    "code": "100071",
+    "description": "DUPLICATE_SCAN_IDENTIFIER"
+  },
+  {
+    "code": "100072",
+    "description": "INVALID_TRACKING_NUMBER"
+  },
+  {
+    "code": "100073",
+    "description": "INVALID_TRACKING_STATUS"
+  },
+  {
+    "code": "100074",
+    "description": "UNABLE_TO_VERIFY_ORDER"
+  },
+  {
+    "code": "100075",
+    "description": "INVALID_CHANNEL_INVENTORY_UPDATE_FORMULA"
+  },
+  {
+    "code": "100075",
+    "description": "INVALID_PRICE_MASTER"
+  },
+  {
+    "code": "100076",
+    "description": "ITEM_TYPE_ALREADY_ADDED_TO_SALE_ORDER"
+  },
+  {
+    "code": "100076",
+    "description": "DUPLICATE_CHANNEL_PRICE_MASTER"
+  },
+  {
+    "code": "100077",
+    "description": "INVALID_TRANSFER_PRICE_FORMULA"
+  },
+  {
+    "code": "100078",
+    "description": "DUPLICATE_SOURCE_SHIPPING_PROVIDER"
+  },
+  {
+    "code": "100079",
+    "description": "INVALID_SOURCE_SHIPPING_PROVIDER"
+  },
+  {
+    "code": "100080",
+    "description": "INVALID_SELLING_PRICE_FORMULA"
+  },
+  {
+    "code": "100081",
+    "description": "INVALID_DATATABLE_VIEW_NAME"
+  },
+  {
+    "code": "100081",
+    "description": "INVALID_TRANSFER_PRICE"
+  },
+  {
+    "code": "100082",
+    "description": "INVALID_DATATABLE_VIEW"
+  },
+  {
+    "code": "100082",
+    "description": "INVALID_SELLING_PRICE"
+  },
+  {
+    "code": "100083",
+    "description": "INVALID_PASSWORD"
+  },
+  {
+    "code": "100084",
+    "description": "INVALID_TENANT"
+  },
+  {
+    "code": "100085",
+    "description": "INVALID_API_REQUEST"
+  },
+  {
+    "code": "100086",
+    "description": "INVALID_USER_DETAIL"
+  },
+  {
+    "code": "100087",
+    "description": "INVALID_RECONCILIATION_STATE"
+  },
+  {
+    "code": "100088",
+    "description": "FILE_EXCEEDS_MAX_ALLOWED_SIZE"
+  },
+  {
+    "code": "100089",
+    "description": "ERROR_SETTING_UP_TENANT"
+  },
+  {
+    "code": "100091",
+    "description": "INVALID_BUNDLE_CODE"
+  },
+  {
+    "code": "100092",
+    "description": "INVALID_BUNDLE_STATE"
+  },
+  {
+    "code": "100093",
+    "description": "INVALID_BUNDLE_ITEM_TYPE"
+  },
+  {
+    "code": "100094",
+    "description": "BUNDLE_ALREADY_EXISTS"
+  },
+  {
+    "code": "100095",
+    "description": "INVALID_BUNDLE_PRICE"
+  },
+  {
+    "code": "100096",
+    "description": "NO_COMPONENT_ITEM_TYPES_IN_BUNDLE"
+  },
+  {
+    "code": "100097",
+    "description": "DUPLICATE_VENDOR_INVOICE_NUMBER"
+  },
+  {
+    "code": "100098",
+    "description": "INVALID_VENDOR_INVOICE_CODE"
+  },
+  {
+    "code": "100099",
+    "description": "INVALID_VENDOR_INVOICE_STATE"
+  },
+  {
+    "code": "100100",
+    "description": "CHANNEL_CONNECTOR_CHALLENGE_RECEIVED"
+  },
+  {
+    "code": "100100",
+    "description": "INVALID_RECONCILIATION_IDENTIFIER"
+  },
+  {
+    "code": "100101",
+    "description": "ORDER_IS_IRRECONCILIABLE"
+  },
+  {
+    "code": "100102",
+    "description": "CHANNEL_ITEM_NOT_DELISTED"
+  },
+  {
+    "code": "100103",
+    "description": "POD_NOT_VERIFIED"
+  },
+  {
+    "code": "100104",
+    "description": "PRICE_SYNC_NOT_CONFIGURED"
+  },
+  {
+    "code": "100105",
+    "description": "UNABLE_TO_UPDATE_PRICE"
+  },
+  {
+    "code": "100106",
+    "description": "UNABLE_TO_CHECK_PRICE"
+  },
+  {
+    "code": "100107",
+    "description": "UNABLE_TO_PULL_PRICE"
+  },
+  {
+    "code": "100108",
+    "description": "UNABLE_TO_PUSH_PRICE"
+  },
+  {
+    "code": "100109",
+    "description": "PENDING_PRICE_UPDATES"
+  },
+  {
+    "code": "100110",
+    "description": "INVALID_SCRIPT_RESPONSE"
+  },
+  {
+    "code": "100111",
+    "description": "INVALID_PRICES"
+  },
+  {
+    "code": "100112",
+    "description": "INVALID_RECOMMENDATION_CODE"
+  },
+  {
+    "code": "100113",
+    "description": "INVALID_RECOMMENDATION_STATUS"
+  },
+  {
+    "code": "100114",
+    "description": "INVALID_RECOMMENDATION_TYPE"
+  },
+  {
+    "code": "100115",
+    "description": "INVALID_RECOMMENDATION_PROVIDER"
+  },
+  {
+    "code": "100116",
+    "description": "FILE_UPLOAD_ERROR"
+  },
+  {
+    "code": "100117",
+    "description": "Web Putaway is not allowed for this facility"
+  },
+  {
+    "code": "100118",
+    "description": "Unable to create invoice"
+  },
+  {
+    "code": "100119",
+    "description": "HSN code not defined on SKU"
+  },
+  {
+    "code": "100120",
+    "description": "Signature upload is mandatory"
+  },
+  {
+    "code": "100121",
+    "description": "Invalid Pickset Id"
+  },
+  {
+    "code": "100122",
+    "description": "INVALID_PICKLIST_ITEM_STATE"
+  },
+  {
+    "code": "100123",
+    "description": "SHELF_BLOCKED_FOR_CYCLE_COUNT"
+  },
+  {
+    "code": "100124",
+    "description": "INACTIVE_SHLEF"
+  },
+  {
+    "code": "100125",
+    "description": "INVALID_GST_NUMBER"
+  },
+  {
+    "code": "100125",
+    "description": "BATCH_GROUP_WITH_SAME_NAME_EXISTS"
+  },
+  {
+    "code": "100126",
+    "description": "INVALID_SCAN_TYPE"
+  },
+  {
+    "code": "100126",
+    "description": "BATCH_GROUP_WITH_SAME_FIELDS_EXISTS"
+  },
+  {
+    "code": "100127",
+    "description": "INFLOW RECEIPT ITEM CAN NOT BE DELETED IN ITEM LEVEL TRACEBAILITY"
+  },
+  {
+    "code": "100128",
+    "description": "BLOCKED_QUANTITY_MISMATCH"
+  },
+  {
+    "code": "100129",
+    "description": "MISSING_CART_ITEMS"
+  },
+  {
+    "code": "100130",
+    "description": "INVENTORY_NOT_ALLOCATED"
+  },
+  {
+    "code": "100131",
+    "description": "MISSING_ITEM_DETAILS"
+  },
+  {
+    "code": "100132",
+    "description": "INVALID_ACTIVITY_ENTITY"
+  },
+  {
+    "code": "100133",
+    "description": "INVOICE_DIGITAL_SINGING_ERROR"
+  },
+  {
+    "code": "100134",
+    "description": "INVALID_BOX_STATE"
+  },
+  {
+    "code": "100135",
+    "description": "ATLEAST_TWO_BOX_REQUIRED"
+  },
+  {
+    "code": "100136",
+    "description": "MISSING_RECONCILIATON_INVOICE_DELIMETER"
+  },
+  {
+    "code": "100136",
+    "description": "NO_GIFT_MESSAGE_PRESENT"
+  },
+  {
+    "code": "100137",
+    "description": "NO_CHANNEL_ITEM_LABEL_PRESENT"
+  },
+  {
+    "code": "100138",
+    "description": "CYCLE_COUNT_INVALID_ITEM_STATUS_CODE"
+  },
+  {
+    "code": "100139",
+    "description": "ALL_ITEMS_OF_BUNDLE_MUST_BE_IN_BOX"
+  },
+  {
+    "code": "100139",
+    "description": "REPLACEMENT_ITEM_NOT_DISPATCHED"
+  },
+  {
+    "code": "100140",
+    "description": "ATLEAST_ONE_SECTION_IN_DEFAULT_ZONE"
+  },
+  {
+    "code": "100141",
+    "description": "DEFAULT_ZONE_CANNOT_BE_DISABLED"
+  },
+  {
+    "code": "100142",
+    "description": "MAX_PURCHASE_ORDER_ITEMS_FOR_ORDER_CREATION"
+  },
+  {
+    "code": "100143",
+    "description": "INVALID_CHANNEL_ITEM_TYPE_STATUS"
+  },
+  {
+    "code": "100144",
+    "description": "BUNDLE_SKU_CANNOT_BE_SPLITTED"
+  },
+  {
+    "code": "100145",
+    "description": "GOOD_QUANTITY_NOT_AVAILABLE_TO_BE_MARKED_AS_BAD"
+  },
+  {
+    "code": "100146",
+    "description": "INVALID_INVENTORY_SYNC_ACTION"
+  },
+  {
+    "code": "100200",
+    "description": "INVALID_VENDOR_INVOICE_ITEM"
+  },
+  {
+    "code": "100201",
+    "description": "DUPLICATE_FACILITY_CODE"
+  },
+  {
+    "code": "100202",
+    "description": "INVALID_SHIPMENT_BATCH_CODE"
+  },
+  {
+    "code": "100203",
+    "description": "DUPLICATE_SEQUENCE_PREFIX"
+  },
+  {
+    "code": "100203",
+    "description": "INVALID_ENTITY_IDENTIFIER_NAME"
+  },
+  {
+    "code": "100204",
+    "description": "CATALOG_SYNC_CAN_RUN_ONCE_IN_HALF_HOUR"
+  },
+  {
+    "code": "100204",
+    "description": "FULL_INVENTORY_SYNC_CAN_RUN_ONCE_IN_HOUR"
+  },
+  {
+    "code": "100204",
+    "description": "RECONCILIATION_INVOICE_SYNC_CAN_RUN_ONCE_IN_HOUR"
+  },
+  {
+    "code": "100205",
+    "description": "SKU_NOT_MAPPED"
+  },
+  {
+    "code": "100206",
+    "description": "INVALID_ADDRESS_DETAIL"
+  },
+  {
+    "code": "100207",
+    "description": "BAD_CHANNEL_STATE"
+  },
+  {
+    "code": "100208",
+    "description": "UNABLE_TO_MARK_RETURNED_ON_CHANNEL"
+  },
+  {
+    "code": "100209",
+    "description": "INVALID_TOKEN"
+  },
+  {
+    "code": "100210",
+    "description": "ERROR_SENDING_EMAIL"
+  },
+  {
+    "code": "100211",
+    "description": "ALREADY_RUNNING"
+  },
+  {
+    "code": "100212",
+    "description": "INVENTORY_UPDATE_NOT_ALLOWED"
+  },
+  {
+    "code": "100213",
+    "description": "CHANNEL_LIMIT_EXCEDED"
+  },
+  {
+    "code": "100214",
+    "description": "INVALID_RETURN_MANIFEST_CODE"
+  },
+  {
+    "code": "100215",
+    "description": "INVALID_PRODUCT_TYPE"
+  },
+  {
+    "code": "100216",
+    "description": "UNABLE_TO_ADD_USER_ROLE"
+  },
+  {
+    "code": "100217",
+    "description": "IMPORT_UPPER_LIMIT_EXCEEDED"
+  },
+  {
+    "code": "100218",
+    "description": "INVALID_OUTBOUND_GATEPASS_ITEM_QUANTITY"
+  },
+  {
+    "code": "100219",
+    "description": "INVALID_OUTBOUND_GATEPASS_ITEM"
+  },
+  {
+    "code": "100220",
+    "description": "SPLIT_PACKAGE_NOT_ALLOWED"
+  },
+  {
+    "code": "100220",
+    "description": "MISSING_REQUIRED_FIELD_TAT"
+  },
+  {
+    "code": "100222",
+    "description": "UNABLE_TO_DOWNLOAD_LABEL"
+  },
+  {
+    "code": "100222",
+    "description": "Internal Error"
+  },
+  {
+    "code": "100223",
+    "description": "SKU_LIMIT_EXCEDED"
+  },
+  {
+    "code": "100239",
+    "description": "NO_SHELVES_LEFT_FOR_CYCLE_COUNT"
+  },
+  {
+    "code": "100240",
+    "description": "INVALID_ZONE_NAME"
+  },
+  {
+    "code": "100241",
+    "description": "TIME_NOT_IN_VALID_COUNTING_HOURS"
+  },
+  {
+    "code": "100246",
+    "description": "CYCLE_COUNT_ALREADY_IN_PROGRESS"
+  },
+  {
+    "code": "100252",
+    "description": "INVALID_PICK_BUCKET_CODE"
+  },
+  {
+    "code": "100253",
+    "description": "INVALID_PICK_BUCKET_STATE"
+  },
+  {
+    "code": "100254",
+    "description": "INVALID_PICK_BATCH_CODE"
+  },
+  {
+    "code": "100255",
+    "description": "INVALID_PICK_BATCH_STATE"
+  },
+  {
+    "code": "100258",
+    "description": "NO_AVAILABLE_SHELF"
+  },
+  {
+    "code": "100258",
+    "description": "INVALID_PICKLIST_DESTINATION"
+  },
+  {
+    "code": "100259",
+    "description": "PICKLIST_ALREADY_RECEIVING"
+  },
+  {
+    "code": "100928",
+    "description": "Invalid value"
+  },
+  {
+    "code": "110001",
+    "description": "INVALID_PUTAWAY_ID"
+  },
+  {
+    "code": "110002",
+    "description": "INVALID_PUTAWAY_STATE"
+  },
+  {
+    "code": "110003",
+    "description": "INVALID_PUTAWAY_CODE"
+  },
+  {
+    "code": "110004",
+    "description": "INVALID_PUTAWAY_ITEM_ID"
+  },
+  {
+    "code": "110004",
+    "description": "ITEM_NOT_IN_GIVEN_PUTAWAY"
+  },
+  {
+    "code": "110005",
+    "description": "INVALID_EMAIL_TEMPLATE_TYPE"
+  },
+  {
+    "code": "110055",
+    "description": "INVALID_REVERSE_PICKUP_CANCELLATION_RESPONSE"
+  },
+  {
+    "code": "120005",
+    "description": "INVALID_EXPORT_SCHEDULE_CONFIG"
+  },
+  {
+    "code": "123422",
+    "description": "INVALID_SHIPMENT_SPLITTING"
+  },
+  {
+    "code": "200001",
+    "description": "INVALID_FACILITY_CODE"
+  },
+  {
+    "code": "200002",
+    "description": "INVALID_TENANT_MODE"
+  },
+  {
+    "code": "200003",
+    "description": "INVALID_FACILITY_CONFIGURATION"
+  },
+  {
+    "code": "200016",
+    "description": "INVALID_COMBINATION_IDENTIFIER"
+  },
+  {
+    "code": "200016",
+    "description": "INVALID_PAYMENT_METHOD"
+  },
+  {
+    "code": "200017",
+    "description": "INVALID_SOURCE"
+  },
+  {
+    "code": "200018",
+    "description": "INVALID_PAYMENT_STATUS"
+  },
+  {
+    "code": "200592",
+    "description": "BATCHING_NOT_ENABLE"
+  },
+  {
+    "code": "400050",
+    "description": "INVALID_CUSTOMER_CODE"
+  },
+  {
+    "code": "500001",
+    "description": "FEATURE_NOT_SUPPORTED"
+  },
+  {
+    "code": "990001",
+    "description": "ITEM_CANNOT_NOT_BE_DISCARDED"
+  },
+  {
+    "code": "990001",
+    "description": "NO_SHIPPING_PACKAGE_AVAILABLE_TO_PICK"
+  },
+  {
+    "code": "990002",
+    "description": "ITEM_NOT_CREATED_DURING_TRANSITION"
+  },
+  {
+    "code": "1000001",
+    "description": "INVALID_PARTY_CODE"
+  },
+  {
+    "code": "1100001",
+    "description": "INVALID_OUTBOUND_GATE_PASS_CODE"
+  },
+  {
+    "code": "1100002",
+    "description": "INVALID_OUTBOUND_GATE_PASS_STATE"
+  },
+  {
+    "code": "1100003",
+    "description": "INVALID_OUTBOUND_GATE_PASS_ITEM_ID"
+  },
+  {
+    "code": "1111111",
+    "description": "THIRD_PARTY_API_RETURNED_ERROR"
+  }
+]

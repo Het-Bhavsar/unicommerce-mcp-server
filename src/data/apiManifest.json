@@ -1,0 +1,893 @@
+[
+  {
+    "id": "using-the-uniware-apis",
+    "title": "Using the Uniware APIs",
+    "category": "Overview",
+    "docsUrl": "https://documentation.unicommerce.com/docs/using-the-uniware-apis.html",
+    "sourcePath": "content\\docs\\api_uniware_using_apis.md",
+    "endpoint": null,
+    "method": null
+  },
+  {
+    "id": "oauth",
+    "title": "Authentication (OAuth)",
+    "category": "Authentication",
+    "docsUrl": "https://documentation.unicommerce.com/docs/oauth.html",
+    "sourcePath": "content\\docs\\api_oauth.md",
+    "endpoint": "/oauth/token",
+    "method": "GET"
+  },
+  {
+    "id": "pos-oauth",
+    "title": "Authentication (OAuth)",
+    "category": "Authentication",
+    "docsUrl": "https://documentation.unicommerce.com/docs/pos-oauth.html",
+    "sourcePath": "content\\docs\\api_pos_oauth.md",
+    "endpoint": "/oauth/token",
+    "method": "GET"
+  },
+  {
+    "id": "oauth2",
+    "title": "Authentication2 (OAuth)",
+    "category": "Authentication",
+    "docsUrl": "https://documentation.unicommerce.com/docs/oauth2.html",
+    "sourcePath": "content\\docs\\api_oauth2.md",
+    "endpoint": "/oauth/token",
+    "method": "GET"
+  },
+  {
+    "id": "authentication",
+    "title": "Get Authentication",
+    "category": "Authentication",
+    "docsUrl": "https://documentation.unicommerce.com/docs/authentication.html",
+    "sourcePath": "content\\docs\\api_mp_authentication.md",
+    "endpoint": "/authToken",
+    "method": "GET"
+  },
+  {
+    "id": "mp-post-authentication",
+    "title": "Post Authentication",
+    "category": "Authentication",
+    "docsUrl": "https://documentation.unicommerce.com/docs/mp-post-authentication.html",
+    "sourcePath": "content\\docs\\api_mp_post_authentication.md",
+    "endpoint": "/authToken",
+    "method": "POST"
+  },
+  {
+    "id": "oauth-refreshtoken",
+    "title": "Refresh Access Token (OAuth)",
+    "category": "Authentication",
+    "docsUrl": "https://documentation.unicommerce.com/docs/oauth-refreshtoken.html",
+    "sourcePath": "content\\docs\\api_oauth_refreshtoken.md",
+    "endpoint": "/oauth/token",
+    "method": "GET"
+  },
+  {
+    "id": "pos-oauth-refreshtoken",
+    "title": "Refresh Access Token (OAuth)",
+    "category": "Authentication",
+    "docsUrl": "https://documentation.unicommerce.com/docs/pos-oauth-refreshtoken.html",
+    "sourcePath": "content\\docs\\api_pos_oauth_refreshtoken.md",
+    "endpoint": "/oauth/token",
+    "method": "GET"
+  },
+  {
+    "id": "sp-authentication",
+    "title": "SP Authentication",
+    "category": "Authentication",
+    "docsUrl": "https://documentation.unicommerce.com/docs/sp-authentication.html",
+    "sourcePath": "content\\docs\\api_sp_authentication.md",
+    "endpoint": "/authToken",
+    "method": "POST"
+  },
+  {
+    "id": "customer-create",
+    "title": "Create Customer",
+    "category": "Inbound",
+    "docsUrl": "https://documentation.unicommerce.com/docs/customer-create.html",
+    "sourcePath": "content\\docs\\api_oms_customer_create.md",
+    "endpoint": "/services/rest/v1/oms/customer/create",
+    "method": "POST"
+  },
+  {
+    "id": "customer-edit",
+    "title": "Update Customer",
+    "category": "Inbound",
+    "docsUrl": "https://documentation.unicommerce.com/docs/customer-edit.html",
+    "sourcePath": "content\\docs\\api_oms_customer_edit.md",
+    "endpoint": "/services/rest/v1/oms/customer/edit",
+    "method": "POST"
+  },
+  {
+    "id": "category-addoredit",
+    "title": "Create or Update Category",
+    "category": "Product",
+    "docsUrl": "https://documentation.unicommerce.com/docs/category-addoredit.html",
+    "sourcePath": "content\\docs\\api_product_category_addoredit.md",
+    "endpoint": "/services/rest/v1/product/category/addOrEdit",
+    "method": "POST"
+  },
+  {
+    "id": "channelitemtype-createoredit",
+    "title": "Create or Update Channel Item Type",
+    "category": "Product",
+    "docsUrl": "https://documentation.unicommerce.com/docs/channelitemtype-createoredit.html",
+    "sourcePath": "content\\docs\\api_product_channelitemtype_createoredit.md",
+    "endpoint": "/services/rest/v1/channel/createChannelItemType",
+    "method": "POST"
+  },
+  {
+    "id": "createoredit-itemtype",
+    "title": "Create or Update Item",
+    "category": "Product",
+    "docsUrl": "https://documentation.unicommerce.com/docs/createoredit-itemtype.html",
+    "sourcePath": "content\\docs\\api_product_itemtype_createoredit.md",
+    "endpoint": "/services/rest/v1/catalog/itemType/createOrEdit",
+    "method": "POST"
+  },
+  {
+    "id": "pos-createoredit-itemtype",
+    "title": "Create or Update Item",
+    "category": "Product",
+    "docsUrl": "https://documentation.unicommerce.com/docs/pos-createoredit-itemtype.html",
+    "sourcePath": "content\\docs\\api_pos_product_itemtype_createoredit.md",
+    "endpoint": "/services/rest/v1/catalog/itemType/createOrEdit",
+    "method": "POST"
+  },
+  {
+    "id": "createoredit-itemtypes",
+    "title": "Create or Update Items",
+    "category": "Product",
+    "docsUrl": "https://documentation.unicommerce.com/docs/createoredit-itemtypes.html",
+    "sourcePath": "content\\docs\\api_product_itemtypes_createoredit.md",
+    "endpoint": "/services/rest/v1/catalog/itemTypes/createOrEdit",
+    "method": "POST"
+  },
+  {
+    "id": "vendor-createoredit",
+    "title": "Create or Update Vendor",
+    "category": "Product",
+    "docsUrl": "https://documentation.unicommerce.com/docs/vendor-createoredit.html",
+    "sourcePath": "content\\docs\\api_wms_purchase_vendor_createoredit.md",
+    "endpoint": "/services/rest/v1/purchase/vendor/create Or /edit",
+    "method": "POST"
+  },
+  {
+    "id": "vendoritemtype-createoredit",
+    "title": "Create or Update Vendor Catalog",
+    "category": "Product",
+    "docsUrl": "https://documentation.unicommerce.com/docs/vendoritemtype-createoredit.html",
+    "sourcePath": "content\\docs\\api_wms_purchase_vendoritemtype_createoredit.md",
+    "endpoint": "/services/rest/v1/purchase/vendorItemType/createOrEdit",
+    "method": "POST"
+  },
+  {
+    "id": "itemtype-get",
+    "title": "Get Item Details",
+    "category": "Product",
+    "docsUrl": "https://documentation.unicommerce.com/docs/itemtype-get.html",
+    "sourcePath": "content\\docs\\api_product_itemtype_get.md",
+    "endpoint": "/services/rest/v1/catalog/itemType/get",
+    "method": "POST"
+  },
+  {
+    "id": "get-vendorbackorderitems",
+    "title": "Get Vendor Backorder Items",
+    "category": "Product",
+    "docsUrl": "https://documentation.unicommerce.com/docs/get-vendorbackorderitems.html",
+    "sourcePath": "content\\docs\\api_wms_purchase_get_vendorbackorderitems.md",
+    "endpoint": "/services/rest/v1/purchase/getVendorBackOrderItems",
+    "method": "POST"
+  },
+  {
+    "id": "product-overview",
+    "title": "Overview",
+    "category": "Product",
+    "docsUrl": "https://documentation.unicommerce.com/docs/product-overview.html",
+    "sourcePath": "content\\docs\\api_product_overview.md",
+    "endpoint": null,
+    "method": null
+  },
+  {
+    "id": "search-itemtype",
+    "title": "Search Item(s)",
+    "category": "Product",
+    "docsUrl": "https://documentation.unicommerce.com/docs/search-itemtype.html",
+    "sourcePath": "content\\docs\\api_product_itemtype_search.md",
+    "endpoint": "/services/rest/v1/product/itemType/search",
+    "method": "POST"
+  },
+  {
+    "id": "adjust-inventory-bulk",
+    "title": "Adjust Inventory (Multiple)",
+    "category": "Inventory",
+    "docsUrl": "https://documentation.unicommerce.com/docs/adjust-inventory-bulk.html",
+    "sourcePath": "content\\docs\\api_inventory_adjust_bulk.md",
+    "endpoint": "/services/rest/v1/inventory/adjust/bulk",
+    "method": "POST"
+  },
+  {
+    "id": "pos-adjust-inventory-bulk",
+    "title": "Adjust Inventory (Multiple)",
+    "category": "Inventory",
+    "docsUrl": "https://documentation.unicommerce.com/docs/pos-adjust-inventory-bulk.html",
+    "sourcePath": "content\\docs\\api_pos_inventory_adjust_bulk.md",
+    "endpoint": "/services/rest/v1/inventory/adjust/bulk",
+    "method": "POST"
+  },
+  {
+    "id": "adjust-inventory",
+    "title": "Adjust Inventory (Single)",
+    "category": "Inventory",
+    "docsUrl": "https://documentation.unicommerce.com/docs/adjust-inventory.html",
+    "sourcePath": "content\\docs\\api_inventory_adjust.md",
+    "endpoint": "/services/rest/v1/inventory/adjust",
+    "method": "POST"
+  },
+  {
+    "id": "inventory-snapshot",
+    "title": "Get Inventory Snapshot",
+    "category": "Inventory",
+    "docsUrl": "https://documentation.unicommerce.com/docs/inventory-snapshot.html",
+    "sourcePath": "content\\docs\\api_inventory_snapshot.md",
+    "endpoint": "/services/rest/v1/inventory/inventorySnapshot/get",
+    "method": "POST"
+  },
+  {
+    "id": "nearby-inventory",
+    "title": "Get Nearby Store Inventory",
+    "category": "Inventory",
+    "docsUrl": "https://documentation.unicommerce.com/docs/nearby-inventory.html",
+    "sourcePath": "content\\docs\\api_nearby_inventory.md",
+    "endpoint": "/services/rest/v1/oms/nearbyInventory/get",
+    "method": "POST"
+  },
+  {
+    "id": "markfound",
+    "title": "Mark Inventory Found",
+    "category": "Inventory",
+    "docsUrl": "https://documentation.unicommerce.com/docs/markfound.html",
+    "sourcePath": "content\\docs\\api_wms_inventory_markfound.md",
+    "endpoint": "/services/rest/v1/inventory/markQuantityFound",
+    "method": "POST"
+  },
+  {
+    "id": "inventory-overview",
+    "title": "Overview",
+    "category": "Inventory",
+    "docsUrl": "https://documentation.unicommerce.com/docs/inventory-overview.html",
+    "sourcePath": "content\\docs\\api_wms_inventory_overview.md",
+    "endpoint": null,
+    "method": null
+  },
+  {
+    "id": "updateinventory",
+    "title": "Post Inventory Update",
+    "category": "Inventory",
+    "docsUrl": "https://documentation.unicommerce.com/docs/updateinventory.html",
+    "sourcePath": "content\\docs\\api_mp_updateinventory.md",
+    "endpoint": "/updateInventory",
+    "method": "POST"
+  },
+  {
+    "id": "pos-saleorder-cancel",
+    "title": "Cancel Sale Order",
+    "category": "Sale Order",
+    "docsUrl": "https://documentation.unicommerce.com/docs/pos-saleorder-cancel.html",
+    "sourcePath": "content\\docs\\api_pos_saleorder_cancel.md",
+    "endpoint": "/services/rest/v1/oms/saleOrder/cancel",
+    "method": "POST"
+  },
+  {
+    "id": "saleorder-cancel",
+    "title": "Cancel Sale Order",
+    "category": "Sale Order",
+    "docsUrl": "https://documentation.unicommerce.com/docs/saleorder-cancel.html",
+    "sourcePath": "content\\docs\\api_oms_saleorder_cancel.md",
+    "endpoint": "/services/rest/v1/oms/saleOrder/cancel",
+    "method": "POST"
+  },
+  {
+    "id": "saleorder-getserviceability",
+    "title": "Check Serviceability",
+    "category": "Sale Order",
+    "docsUrl": "https://documentation.unicommerce.com/docs/saleorder-getserviceability.html",
+    "sourcePath": "content\\docs\\api_oms_saleorder_getserviceability.md",
+    "endpoint": "/services/rest/v1/oms/saleOrder/getServiceability",
+    "method": "POST"
+  },
+  {
+    "id": "saleorder-create",
+    "title": "Create Sale Order",
+    "category": "Sale Order",
+    "docsUrl": "https://documentation.unicommerce.com/docs/saleorder-create.html",
+    "sourcePath": "content\\docs\\api_oms_saleorder_create.md",
+    "endpoint": "/services/rest/v1/oms/saleOrder/create",
+    "method": "POST"
+  },
+  {
+    "id": "saleorder-get",
+    "title": "Get Sale Order",
+    "category": "Sale Order",
+    "docsUrl": "https://documentation.unicommerce.com/docs/saleorder-get.html",
+    "sourcePath": "content\\docs\\api_oms_saleorder_get.md",
+    "endpoint": "/services/rest/v1/oms/saleorder/get",
+    "method": "POST"
+  },
+  {
+    "id": "saleorder-hold",
+    "title": "Hold Sale Order",
+    "category": "Sale Order",
+    "docsUrl": "https://documentation.unicommerce.com/docs/saleorder-hold.html",
+    "sourcePath": "content\\docs\\api_oms_saleorder_hold.md",
+    "endpoint": "/services/rest/v1/oms/saleOrder/hold",
+    "method": "POST"
+  },
+  {
+    "id": "saleorder-holditems",
+    "title": "Hold Sale Order Items",
+    "category": "Sale Order",
+    "docsUrl": "https://documentation.unicommerce.com/docs/saleorder-holditems.html",
+    "sourcePath": "content\\docs\\api_oms_saleorder_holditems.md",
+    "endpoint": "/services/rest/v1/oms/saleOrder/holdSaleOrderItems",
+    "method": "POST"
+  },
+  {
+    "id": "saleorder-item-markdelivered",
+    "title": "Mark Item Delivered",
+    "category": "Sale Order",
+    "docsUrl": "https://documentation.unicommerce.com/docs/saleorder-item-markdelivered.html",
+    "sourcePath": "content\\docs\\api_oms_saleorder_item_markdelivered.md",
+    "endpoint": "/services/rest/v1/saleOrderItem/markDelivered",
+    "method": "POST"
+  },
+  {
+    "id": "saleorder-markreturned",
+    "title": "Mark Sale Order Returned",
+    "category": "Sale Order",
+    "docsUrl": "https://documentation.unicommerce.com/docs/saleorder-markreturned.html",
+    "sourcePath": "content\\docs\\api_oms_saleorder_markreturned.md",
+    "endpoint": "/services/rest/v1/saleOrder/markReturned",
+    "method": "POST"
+  },
+  {
+    "id": "saleorder-overview",
+    "title": "Overview",
+    "category": "Sale Order",
+    "docsUrl": "https://documentation.unicommerce.com/docs/saleorder-overview.html",
+    "sourcePath": "content\\docs\\api_oms_saleorder_overview.md",
+    "endpoint": null,
+    "method": null
+  },
+  {
+    "id": "saleorder-search",
+    "title": "Search Sale Order",
+    "category": "Sale Order",
+    "docsUrl": "https://documentation.unicommerce.com/docs/saleorder-search.html",
+    "sourcePath": "content\\docs\\api_oms_saleorder_search.md",
+    "endpoint": "/services/rest/v1/oms/saleOrder/search",
+    "method": "POST"
+  },
+  {
+    "id": "saleorder-setpriority",
+    "title": "Set Sale Order Priority",
+    "category": "Sale Order",
+    "docsUrl": "https://documentation.unicommerce.com/docs/saleorder-setpriority.html",
+    "sourcePath": "content\\docs\\api_oms_saleorder_setpriority.md",
+    "endpoint": "/services/rest/v1/oms/saleOrder/setPriority",
+    "method": "POST"
+  },
+  {
+    "id": "saleorder-unhold",
+    "title": "Unhold Sale Order",
+    "category": "Sale Order",
+    "docsUrl": "https://documentation.unicommerce.com/docs/saleorder-unhold.html",
+    "sourcePath": "content\\docs\\api_oms_saleorder_unhold.md",
+    "endpoint": "/services/rest/v1/oms/saleOrder/unhold",
+    "method": "POST"
+  },
+  {
+    "id": "saleorder-unholditems",
+    "title": "Unhold Sale Order Items",
+    "category": "Sale Order",
+    "docsUrl": "https://documentation.unicommerce.com/docs/saleorder-unholditems.html",
+    "sourcePath": "content\\docs\\api_oms_saleorder_unholditems.md",
+    "endpoint": "/services/rest/v1/oms/saleOrder/unholdSaleOrderItems",
+    "method": "POST"
+  },
+  {
+    "id": "saleorder-edit",
+    "title": "Update Sale Order",
+    "category": "Sale Order",
+    "docsUrl": "https://documentation.unicommerce.com/docs/saleorder-edit.html",
+    "sourcePath": "content\\docs\\api_oms_saleorder_edit.md",
+    "endpoint": "/services/rest/v1/oms/saleOrder/edit",
+    "method": "POST"
+  },
+  {
+    "id": "saleorder-edit-itemmetadata",
+    "title": "Update Sale Order Item Metadata",
+    "category": "Sale Order",
+    "docsUrl": "https://documentation.unicommerce.com/docs/saleorder-edit-itemmetadata.html",
+    "sourcePath": "content\\docs\\api_oms_saleorder_edit_itemmetadata.md",
+    "endpoint": "/services/rest/v1/oms/saleOrder/editSaleOrderItemMetadata",
+    "method": "POST"
+  },
+  {
+    "id": "saleorder-edit-metadata",
+    "title": "Update Sale Order Metadata",
+    "category": "Sale Order",
+    "docsUrl": "https://documentation.unicommerce.com/docs/saleorder-edit-metadata.html",
+    "sourcePath": "content\\docs\\api_oms_saleorder_edit_metadata.md",
+    "endpoint": "/services/rest/v1/oms/saleOrder/editSaleOrderMetadata",
+    "method": "POST"
+  },
+  {
+    "id": "saleorder-verify",
+    "title": "Verify Sale Order",
+    "category": "Sale Order",
+    "docsUrl": "https://documentation.unicommerce.com/docs/saleorder-verify.html",
+    "sourcePath": "content\\docs\\api_oms_saleorder_verify.md",
+    "endpoint": "/services/rest/v1/oms/saleOrder/verify",
+    "method": "POST"
+  },
+  {
+    "id": "saleorder-alternateitem-accept",
+    "title": "Accept Alternate Item",
+    "category": "Fulfillment",
+    "docsUrl": "https://documentation.unicommerce.com/docs/saleorder-alternateitem-accept.html",
+    "sourcePath": "content\\docs\\api_oms_saleorder_alternateitem_accept.md",
+    "endpoint": "/services/rest/v1/oms/saleOrder/acceptSaleOrderItemAlternate",
+    "method": "POST"
+  },
+  {
+    "id": "shippingmanifest-addshippingpackage",
+    "title": "Add Shipping Package to Manifest",
+    "category": "Fulfillment",
+    "docsUrl": "https://documentation.unicommerce.com/docs/shippingmanifest-addshippingpackage.html",
+    "sourcePath": "content\\docs\\api_oms_shippingmanifest_addshippingpackage.md",
+    "endpoint": "/services/rest/v1/oms/shippingManifest/addShippingPackage",
+    "method": "POST"
+  },
+  {
+    "id": "allocateshippingprovider",
+    "title": "Allocate Shipping Provider",
+    "category": "Fulfillment",
+    "docsUrl": "https://documentation.unicommerce.com/docs/allocateshippingprovider.html",
+    "sourcePath": "content\\docs\\api_oms_allocateshippingprovider.md",
+    "endpoint": "/services/rest/v1/oms/shippingPackage/allocateShippingProvider",
+    "method": "POST"
+  },
+  {
+    "id": "shippingmanifest-close",
+    "title": "Close Shipping Manifest",
+    "category": "Fulfillment",
+    "docsUrl": "https://documentation.unicommerce.com/docs/shippingmanifest-close.html",
+    "sourcePath": "content\\docs\\api_oms_shippingmanifest_close.md",
+    "endpoint": "/services/rest/v1/oms/shippingManifest/close",
+    "method": "POST"
+  },
+  {
+    "id": "saleorder-alternateitem-create",
+    "title": "Create Alternate Item",
+    "category": "Fulfillment",
+    "docsUrl": "https://documentation.unicommerce.com/docs/saleorder-alternateitem-create.html",
+    "sourcePath": "content\\docs\\api_oms_saleorder_alternateitem_create.md",
+    "endpoint": "/services/rest/v1/oms/saleOrder/createSaleOrderItemAlternate",
+    "method": "POST"
+  },
+  {
+    "id": "pos-shippingmanifest-create-close",
+    "title": "Create and Complete Manifest",
+    "category": "Fulfillment",
+    "docsUrl": "https://documentation.unicommerce.com/docs/pos-shippingmanifest-create-close.html",
+    "sourcePath": "content\\docs\\api_pos_shippingmanifest_create_close.md",
+    "endpoint": "/services/rest/v1/oms/shippingManifest/createclose",
+    "method": "POST"
+  },
+  {
+    "id": "shippingmanifest-create-close",
+    "title": "Create and Complete Manifest",
+    "category": "Fulfillment",
+    "docsUrl": "https://documentation.unicommerce.com/docs/shippingmanifest-create-close.html",
+    "sourcePath": "content\\docs\\api_oms_shippingmanifest_create_close.md",
+    "endpoint": "/services/rest/v1/oms/shippingManifest/createclose",
+    "method": "POST"
+  },
+  {
+    "id": "shippingpackage-createinvoice",
+    "title": "Create Invoice",
+    "category": "Fulfillment",
+    "docsUrl": "https://documentation.unicommerce.com/docs/shippingpackage-createinvoice.html",
+    "sourcePath": "content\\docs\\api_oms_shippingpackage_createinvoice.md",
+    "endpoint": "/services/rest/v1/oms/shippingPackage/createInvoice",
+    "method": "POST"
+  },
+  {
+    "id": "pos-shippingpackage-createinvoice-allocateshippingprovider",
+    "title": "Create Invoice and Allocate Shipping Provider",
+    "category": "Fulfillment",
+    "docsUrl": "https://documentation.unicommerce.com/docs/pos-shippingpackage-createinvoice-allocateshippingprovider.html",
+    "sourcePath": "content\\docs\\api_pos_shippingpackage_createinvoice_allocateshippingprovider.md",
+    "endpoint": "/services/rest/v1/oms/shippingPackage/createInvoiceAndAllocateShippingProvider",
+    "method": "POST"
+  },
+  {
+    "id": "shippingpackage-createinvoice-allocateshippingprovider",
+    "title": "Create Invoice and Allocate Shipping Provider",
+    "category": "Fulfillment",
+    "docsUrl": "https://documentation.unicommerce.com/docs/shippingpackage-createinvoice-allocateshippingprovider.html",
+    "sourcePath": "content\\docs\\api_oms_shippingpackage_createinvoice_allocateshippingprovider.md",
+    "endpoint": "/services/rest/v1/oms/shippingPackage/createInvoiceAndAllocateShippingProvider",
+    "method": "POST"
+  },
+  {
+    "id": "createinvoice-with-details",
+    "title": "Create Invoice with Details",
+    "category": "Fulfillment",
+    "docsUrl": "https://documentation.unicommerce.com/docs/createinvoice-with-details.html",
+    "sourcePath": "content\\docs\\api_invoice_createinvoice_with_details.md",
+    "endpoint": "/services/rest/v1/createInvoiceWithDetails",
+    "method": "POST"
+  },
+  {
+    "id": "createinvoice-by-saleordercode",
+    "title": "Create Invoice with Sale Order Code",
+    "category": "Fulfillment",
+    "docsUrl": "https://documentation.unicommerce.com/docs/createinvoice-by-saleordercode.html",
+    "sourcePath": "content\\docs\\api_invoice_createinvoice_by_saleordercode.md",
+    "endpoint": "/services/rest/v1/invoice/createInvoiceBySaleOrderCode",
+    "method": "POST"
+  },
+  {
+    "id": "shippingmanifest-create",
+    "title": "Create Shipping Manifest",
+    "category": "Fulfillment",
+    "docsUrl": "https://documentation.unicommerce.com/docs/shippingmanifest-create.html",
+    "sourcePath": "content\\docs\\api_oms_shippingmanifest_create.md",
+    "endpoint": "/services/rest/v1/oms/shippingManifest/create",
+    "method": "POST"
+  },
+  {
+    "id": "shippingpackage-create",
+    "title": "Create Shipping Package",
+    "category": "Fulfillment",
+    "docsUrl": "https://documentation.unicommerce.com/docs/shippingpackage-create.html",
+    "sourcePath": "content\\docs\\api_oms_shippingpackage_create.md",
+    "endpoint": "/services/rest/v1/oms/shippingPackage/create",
+    "method": "POST"
+  },
+  {
+    "id": "shippingpackage-forcedispatch",
+    "title": "Force Dispatch Shipping Package",
+    "category": "Fulfillment",
+    "docsUrl": "https://documentation.unicommerce.com/docs/shippingpackage-forcedispatch.html",
+    "sourcePath": "content\\docs\\api_oms_shippingpackage_Fdispatch.md",
+    "endpoint": "/services/rest/v1/oms/shippingPackage/forceDispatch",
+    "method": "POST"
+  },
+  {
+    "id": "getinvoicedetails",
+    "title": "Get Invoice Details",
+    "category": "Fulfillment",
+    "docsUrl": "https://documentation.unicommerce.com/docs/getinvoicedetails.html",
+    "sourcePath": "content\\docs\\api_mp_invoicedetails.md",
+    "endpoint": "/invoiceDetails",
+    "method": "GET"
+  },
+  {
+    "id": "invoice-getdetails",
+    "title": "Get Invoice Details",
+    "category": "Fulfillment",
+    "docsUrl": "https://documentation.unicommerce.com/docs/invoice-getdetails.html",
+    "sourcePath": "content\\docs\\api_invoice_getdetails.md",
+    "endpoint": "/services/rest/v1/invoice/details/get",
+    "method": "POST"
+  },
+  {
+    "id": "shippingpackage-getinvoicelabel",
+    "title": "Get Invoice Label",
+    "category": "Fulfillment",
+    "docsUrl": "https://documentation.unicommerce.com/docs/shippingpackage-getinvoicelabel.html",
+    "sourcePath": "content\\docs\\api_oms_shippingpackage_getinvoicelabel.md",
+    "endpoint": "/services/rest/v1/oms/shippingPackage/getInvoiceLabel",
+    "method": "POST"
+  },
+  {
+    "id": "getinvoicepdf-by-invoicecode",
+    "title": "Get Invoice Pdf by Invoice Code",
+    "category": "Fulfillment",
+    "docsUrl": "https://documentation.unicommerce.com/docs/getinvoicepdf-by-invoicecode.html",
+    "sourcePath": "content\\docs\\api_invoice_getinvoicepdf-by-invoicecode.md",
+    "endpoint": "/services/rest/v1/oms/invoice/show",
+    "method": "GET"
+  },
+  {
+    "id": "shippingmanifest-get",
+    "title": "Get Shipping Manifest",
+    "category": "Fulfillment",
+    "docsUrl": "https://documentation.unicommerce.com/docs/shippingmanifest-get.html",
+    "sourcePath": "content\\docs\\api_oms_shippingmanifest_get.md",
+    "endpoint": "/services/rest/v1/oms/shippingManifest/get",
+    "method": "POST"
+  },
+  {
+    "id": "getshippingpackagedetails",
+    "title": "Get Shipping Package Details",
+    "category": "Fulfillment",
+    "docsUrl": "https://documentation.unicommerce.com/docs/getshippingpackagedetails.html",
+    "sourcePath": "content\\docs\\api_oms_getshippingpackagedetails.md",
+    "endpoint": "/services/rest/v1/oms/shippingPackage/getShippingPackageDetails",
+    "method": "POST"
+  },
+  {
+    "id": "getshippingpackages",
+    "title": "Get Shipping Packages",
+    "category": "Fulfillment",
+    "docsUrl": "https://documentation.unicommerce.com/docs/getshippingpackages.html",
+    "sourcePath": "content\\docs\\api_oms_getshippingpackages.md",
+    "endpoint": "/services/rest/v1/oms/shippingPackage/getShippingPackages",
+    "method": "POST"
+  },
+  {
+    "id": "shippingpackage-dispatch",
+    "title": "Mark Dispatched Shipping Package",
+    "category": "Fulfillment",
+    "docsUrl": "https://documentation.unicommerce.com/docs/shippingpackage-dispatch.html",
+    "sourcePath": "content\\docs\\api_oms_shippingpackage_dispatch.md",
+    "endpoint": "/services/rest/v1/oms/shippingPackage/dispatch",
+    "method": "POST"
+  },
+  {
+    "id": "shippingpackage-modify",
+    "title": "Modify Shipping Package",
+    "category": "Fulfillment",
+    "docsUrl": "https://documentation.unicommerce.com/docs/shippingpackage-modify.html",
+    "sourcePath": "content\\docs\\api_oms_shippingpackage_modify.md",
+    "endpoint": "/services/rest/v1/oms/shippingPackage/modify",
+    "method": "POST"
+  },
+  {
+    "id": "pos-shippingpackage-search",
+    "title": "Search Shipping Package",
+    "category": "Fulfillment",
+    "docsUrl": "https://documentation.unicommerce.com/docs/pos-shippingpackage-search.html",
+    "sourcePath": "content\\docs\\api_pos_shippingpackage_search.md",
+    "endpoint": "/services/rest/v1/oms/shippingPackage/search",
+    "method": "POST"
+  },
+  {
+    "id": "shippingpackage-search",
+    "title": "Search Shipping Package",
+    "category": "Fulfillment",
+    "docsUrl": "https://documentation.unicommerce.com/docs/shippingpackage-search.html",
+    "sourcePath": "content\\docs\\api_oms_shippingpackage_search.md",
+    "endpoint": "/services/rest/v1/oms/shippingPackage/search",
+    "method": "POST"
+  },
+  {
+    "id": "shippingpackage-createanddispatch",
+    "title": "Shipment Create and Mark Dispatched",
+    "category": "Fulfillment",
+    "docsUrl": "https://documentation.unicommerce.com/docs/shippingpackage-createanddispatch.html",
+    "sourcePath": "content\\docs\\api_oms_shippingpackage_createanddispatch.md",
+    "endpoint": "/services/rest/v1/oms/shippingPackage/createAndDispatchBySaleOrderItemCode",
+    "method": "POST"
+  },
+  {
+    "id": "shippingpackage-split",
+    "title": "Split Shipping Package",
+    "category": "Fulfillment",
+    "docsUrl": "https://documentation.unicommerce.com/docs/shippingpackage-split.html",
+    "sourcePath": "content\\docs\\api_oms_shippingpackage-split.md",
+    "endpoint": "/services/rest/v1/oms/shippingPackage/split",
+    "method": "POST"
+  },
+  {
+    "id": "update-shipment-sealid-bulk",
+    "title": "Update Shipment Seal ID (Multiple)",
+    "category": "Fulfillment",
+    "docsUrl": "https://documentation.unicommerce.com/docs/update-shipment-sealid-bulk.html",
+    "sourcePath": "content\\docs\\api_update_shipment_sealid_bulk.md",
+    "endpoint": "/services/rest/v1/package/updateMultiple",
+    "method": "POST"
+  },
+  {
+    "id": "update-shipment-sealid",
+    "title": "Update Shipment Seal ID (Single)",
+    "category": "Fulfillment",
+    "docsUrl": "https://documentation.unicommerce.com/docs/update-shipment-sealid.html",
+    "sourcePath": "content\\docs\\api_update_shipment_sealid.md",
+    "endpoint": "/services/rest/v1/package/update",
+    "method": "POST"
+  },
+  {
+    "id": "shippingpackage-edit",
+    "title": "Update Shipping Package",
+    "category": "Fulfillment",
+    "docsUrl": "https://documentation.unicommerce.com/docs/shippingpackage-edit.html",
+    "sourcePath": "content\\docs\\api_oms_shippingpackage_edit.md",
+    "endpoint": "/services/rest/v1/oms/shippingPackage/edit",
+    "method": "POST"
+  },
+  {
+    "id": "shippingpackage-updatetrackingstatus",
+    "title": "Update Tracking Status",
+    "category": "Fulfillment",
+    "docsUrl": "https://documentation.unicommerce.com/docs/shippingpackage-updatetrackingstatus.html",
+    "sourcePath": "content\\docs\\api_oms_shippingpackage_updatetrackingstatus.md",
+    "endpoint": "/services/rest/v1/oms/updateShipmentTrackingStatus",
+    "method": "POST"
+  },
+  {
+    "id": "create-reversepickup",
+    "title": "Create Reverse Pick-up",
+    "category": "Returns",
+    "docsUrl": "https://documentation.unicommerce.com/docs/create-reversepickup.html",
+    "sourcePath": "content\\docs\\api_oms_reversepickup_create.md",
+    "endpoint": "/services/rest/v1/oms/reversePickup/create",
+    "method": "POST"
+  },
+  {
+    "id": "return-get",
+    "title": "Get Return",
+    "category": "Returns",
+    "docsUrl": "https://documentation.unicommerce.com/docs/return-get.html",
+    "sourcePath": "content\\docs\\api_oms_return_get.md",
+    "endpoint": "/services/rest/v1/oms/return/get",
+    "method": "POST"
+  },
+  {
+    "id": "return-search",
+    "title": "Search Return",
+    "category": "Returns",
+    "docsUrl": "https://documentation.unicommerce.com/docs/return-search.html",
+    "sourcePath": "content\\docs\\api_oms_return_search.md",
+    "endpoint": "/services/rest/v1/oms/return/search",
+    "method": "POST"
+  },
+  {
+    "id": "gatepass-nontraceable-additem",
+    "title": "Add Non-traceable item in Gatepass",
+    "category": "Outbound",
+    "docsUrl": "https://documentation.unicommerce.com/docs/gatepass-nontraceable-additem.html",
+    "sourcePath": "content\\docs\\api_wms_purchase_gatepass_nontraceable_additem.md",
+    "endpoint": "/services/rest/v1/purchase/gatepass/nontraceable/addItem",
+    "method": "POST"
+  },
+  {
+    "id": "gatepass-complete",
+    "title": "Complete Gatepass",
+    "category": "Outbound",
+    "docsUrl": "https://documentation.unicommerce.com/docs/gatepass-complete.html",
+    "sourcePath": "content\\docs\\api_wms_purchase_gatepass_complete.md",
+    "endpoint": "/services/rest/v1/purchase/gatepass/complete",
+    "method": "POST"
+  },
+  {
+    "id": "gatepass-discard",
+    "title": "Discard Gatepass",
+    "category": "Outbound",
+    "docsUrl": "https://documentation.unicommerce.com/docs/gatepass-discard.html",
+    "sourcePath": "content\\docs\\api_wms_purchase_gatepass_discard.md",
+    "endpoint": "/services/rest/v1/purchase/gatepass/discard",
+    "method": "POST"
+  },
+  {
+    "id": "gatepass-get",
+    "title": "Get Gatepass",
+    "category": "Outbound",
+    "docsUrl": "https://documentation.unicommerce.com/docs/gatepass-get.html",
+    "sourcePath": "content\\docs\\api_wms_purchase_gatepass_get.md",
+    "endpoint": "/services/rest/v1/purchase/gatepass/get",
+    "method": "POST"
+  },
+  {
+    "id": "gatepass-itemremove",
+    "title": "Remove Item in Gatepass",
+    "category": "Outbound",
+    "docsUrl": "https://documentation.unicommerce.com/docs/gatepass-itemremove.html",
+    "sourcePath": "content\\docs\\api_wms_purchase_gatepass_itemremove.md",
+    "endpoint": "/services/rest/v1/purchase/gatepass/item/remove",
+    "method": "POST"
+  },
+  {
+    "id": "gatepass-scan-item",
+    "title": "Scan Item",
+    "category": "Outbound",
+    "docsUrl": "https://documentation.unicommerce.com/docs/gatepass-scan-item.html",
+    "sourcePath": "content\\docs\\api_wms_purchase_gatepass_scan_item.md",
+    "endpoint": "/services/rest/v1/purchase/gatepass/scan/item",
+    "method": "POST"
+  },
+  {
+    "id": "gatepass-search",
+    "title": "Search Gatepass",
+    "category": "Outbound",
+    "docsUrl": "https://documentation.unicommerce.com/docs/gatepass-search.html",
+    "sourcePath": "content\\docs\\api_wms_purchase_gatepass_search.md",
+    "endpoint": "/services/rest/v1/purchase/gatepass/search",
+    "method": "POST"
+  },
+  {
+    "id": "gatepass-edit",
+    "title": "Update Gatepass",
+    "category": "Outbound",
+    "docsUrl": "https://documentation.unicommerce.com/docs/gatepass-edit.html",
+    "sourcePath": "content\\docs\\api_wms_purchase_gatepass_edit.md",
+    "endpoint": "/services/rest/v1/purchase/gatepass/edit",
+    "method": "POST"
+  },
+  {
+    "id": "pos-facility-confirm",
+    "title": "Accept or Reject Sale Order",
+    "category": "Facility",
+    "docsUrl": "https://documentation.unicommerce.com/docs/pos-facility-confirm.html",
+    "sourcePath": "content\\docs\\api_pos_facility_confirm.md",
+    "endpoint": "/services/rest/v1/facility/confirm",
+    "method": "POST"
+  },
+  {
+    "id": "adjust-batch-inventory-bulk",
+    "title": "Adjust Batchwise Inventory (Multiple)",
+    "category": "Facility",
+    "docsUrl": "https://documentation.unicommerce.com/docs/adjust-batch-inventory-bulk.html",
+    "sourcePath": "content\\docs\\api_batch_inventory_adjust_bulk.md",
+    "endpoint": "/services/rest/v1/inventory/adjust/bulk",
+    "method": "POST"
+  },
+  {
+    "id": "facility-get",
+    "title": "Get Facility Details",
+    "category": "Facility",
+    "docsUrl": "https://documentation.unicommerce.com/docs/facility-get.html",
+    "sourcePath": "content\\docs\\api_wms_facility_get.md",
+    "endpoint": "/services/rest/v1/facility/get",
+    "method": "POST"
+  },
+  {
+    "id": "facility-search",
+    "title": "Search Facility",
+    "category": "Facility",
+    "docsUrl": "https://documentation.unicommerce.com/docs/facility-search.html",
+    "sourcePath": "content\\docs\\api_wms_facility_search.md",
+    "endpoint": "/services/rest/v1/facility/search",
+    "method": "POST"
+  },
+  {
+    "id": "saleorder-itemswitchfacility",
+    "title": "Switch Facility Sale Order Items",
+    "category": "Facility",
+    "docsUrl": "https://documentation.unicommerce.com/docs/saleorder-itemswitchfacility.html",
+    "sourcePath": "content\\docs\\api_oms_saleorder_itemswitchfacility.md",
+    "endpoint": "/services/rest/v1/oms/saleorder/facility/switch",
+    "method": "POST"
+  },
+  {
+    "id": "export-create",
+    "title": "Create Export Job",
+    "category": "Export Job",
+    "docsUrl": "https://documentation.unicommerce.com/docs/export-create.html",
+    "sourcePath": "content\\docs\\api_export_create.md",
+    "endpoint": "/services/rest/v1/export/job/create",
+    "method": "POST"
+  },
+  {
+    "id": "export-status",
+    "title": "Get Export Job Status and Report",
+    "category": "Export Job",
+    "docsUrl": "https://documentation.unicommerce.com/docs/export-status.html",
+    "sourcePath": "content\\docs\\api_export_status.md",
+    "endpoint": "/services/rest/v1/export/job/status",
+    "method": "POST"
+  },
+  {
+    "id": "response-codes",
+    "title": "Response Codes",
+    "category": "Response Codes",
+    "docsUrl": "https://documentation.unicommerce.com/docs/response-codes.html",
+    "sourcePath": "content\\docs\\api_error_codes.md",
+    "endpoint": null,
+    "method": null
+  }
+]
