@@ -1,14 +1,26 @@
 const DEFAULT_TIMEOUT_MS = 30_000;
 
+/**
+ * Tenant -> base URL: full http(s) URL as-is; a dotted host gets https://;
+ * a bare tenant name becomes https://<tenant>.unicommerce.com.
+ */
+export function resolveUniwareBaseUrl(tenant) {
+  const raw = String(tenant ?? '').trim();
+  if (!raw) return null;
+  let url;
+  if (/^https?:\/\//i.test(raw)) url = raw;
+  else if (raw.includes('.')) url = `https://${raw}`;
+  else url = `https://${raw}.unicommerce.com`;
+  return url.replace(/\/+$/, '');
+}
+
+/** Explicit per-call base URL override (baseUrl wins over subdomain). */
 export function normalizeBaseUrl({ baseUrl, subdomain } = {}) {
-  const envBase = process.env.UNICOMMERCE_BASE_URL;
-  const picked = baseUrl || envBase || (subdomain ? `https://${subdomain}.unicommerce.com` : null);
-
+  const picked = resolveUniwareBaseUrl(baseUrl || subdomain);
   if (!picked) {
-    throw new Error('Missing base URL. Provide baseUrl/subdomain or set UNICOMMERCE_BASE_URL.');
+    throw new Error('Missing base URL. Provide baseUrl/subdomain or set UNICOMMERCE_TENANT.');
   }
-
-  return picked.replace(/\/$/, '');
+  return picked;
 }
 
 export function buildUrl({ baseUrl, endpoint, query }) {
@@ -18,6 +30,10 @@ export function buildUrl({ baseUrl, endpoint, query }) {
 
   const normalizedEndpoint = endpoint.startsWith('/') ? endpoint : `/${endpoint}`;
   const url = new URL(normalizedEndpoint, `${baseUrl}/`);
+  if (url.origin !== new URL(baseUrl).origin) {
+    // e.g. endpoint "//evil.example/x" — never send credentials off-tenant.
+    throw new Error('Endpoint must be a path on the Uniware base URL.');
+  }
 
   if (query && typeof query === 'object') {
     for (const [key, value] of Object.entries(query)) {
@@ -90,8 +106,9 @@ export async function callUniwareApi({
   headers = {},
   body,
   authToken,
-  timeoutMs = DEFAULT_TIMEOUT_MS
+  timeoutMs
 }) {
+  timeoutMs ??= DEFAULT_TIMEOUT_MS;
   const url = buildUrl({ baseUrl, endpoint, query });
   const upperMethod = method.toUpperCase();
 

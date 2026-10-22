@@ -10,7 +10,8 @@
     "start:stdio": "MCP_TRANSPORT=stdio node src/index.js",
     "start:http": "MCP_TRANSPORT=http node src/index.js",
     "dev": "node --watch src/index.js",
-    "dev:http": "MCP_TRANSPORT=http node --watch src/index.js"
+    "dev:http": "MCP_TRANSPORT=http node --watch src/index.js",
+    "test": "node --test test/*.test.js"
   },
   "keywords": [
     "mcp",
@@ -21,6 +22,10 @@
   "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.18.0",
+    "express": "^5.2.1",
     "zod": "^3.23.8"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }

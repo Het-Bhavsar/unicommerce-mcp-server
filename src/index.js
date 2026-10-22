@@ -9,11 +9,27 @@ async function startStdioServer() {
   await server.connect(transport);
 }
 
+function onShutdownSignals(shutdown) {
+  for (const signal of ['SIGINT', 'SIGTERM']) {
+    process.on(signal, async () => {
+      try {
+        await shutdown();
+        process.exit(0);
+      } catch (error) {
+        console.error('Graceful shutdown failed:', error?.message || error);
+        process.exit(1);
+      }
+    });
+  }
+}
+
 async function main() {
-  const mode = (process.env.MCP_TRANSPORT || 'stdio').toLowerCase();
+  // Hosted (Railway sets PORT) defaults to http; local default stays stdio.
+  const mode = (process.env.MCP_TRANSPORT || (process.env.PORT ? 'http' : 'stdio')).toLowerCase();
 
   if (mode === 'http') {
-    await startHttpServer();
+    const { close } = await startHttpServer();
+    onShutdownSignals(close);
     return;
   }
 
@@ -21,6 +37,6 @@ async function main() {
 }
 
 main().catch((error) => {
-  console.error('Failed to start Unicommerce MCP server', error);
+  console.error('Failed to start Unicommerce MCP server:', error?.message || error);
   process.exit(1);
 });
