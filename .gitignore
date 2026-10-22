@@ -1,3 +1,10 @@
 node_modules/
 .DS_Store
 npm-debug.log*
+.env
+.env.*
+!.env.example
+.team_key
+.uc_creds.json
+.claude-run.log
+reference/

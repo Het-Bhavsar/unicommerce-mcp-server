@@ -2,7 +2,8 @@ import fs from 'node:fs';
 import { z } from 'zod';
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 
-import { callUniwareApi, collectResponseCodes, normalizeBaseUrl } from './uniwareClient.js';
+import { getDefaultUniware } from './uniwareAuth.js';
+import { collectResponseCodes } from './uniwareClient.js';
 
 const apiManifest = JSON.parse(fs.readFileSync(new URL('../data/apiManifest.json', import.meta.url), 'utf8'));
 const responseCodes = JSON.parse(fs.readFileSync(new URL('../data/responseCodes.json', import.meta.url), 'utf8'));
@@ -70,7 +71,24 @@ function responseCodeDetails(codes = []) {
     .filter((item) => item.description !== null);
 }
 
-export function createUniwareMcpServer() {
+const READ_ONLY = { readOnlyHint: true, destructiveHint: false, openWorldHint: true };
+
+function toIsoDate(value, field) {
+  const parsed = new Date(value);
+  if (Number.isNaN(parsed.getTime())) {
+    throw new Error(`${field} must be an ISO 8601 date/time, got: ${value}`);
+  }
+  return parsed.toISOString();
+}
+
+function uniwareResult(result) {
+  if (!result.ok) {
+    throw new Error(`Uniware returned HTTP ${result.status}: ${JSON.stringify(result.data).slice(0, 2000)}`);
+  }
+  return toTextContent(result.data);
+}
+
+export function createUniwareMcpServer({ uniware = getDefaultUniware() } = {}) {
   const server = new McpServer({
     name: SERVER_NAME,
     version: SERVER_VERSION
@@ -163,7 +181,7 @@ export function createUniwareMcpServer() {
 
   server.tool(
     'uniware_call_api',
-    'Execute a Uniware API request by apiId (preferred) or direct endpoint.',
+    'Execute a Uniware API request by apiId (preferred) or direct endpoint. Uses the relay\'s configured tenant, credentials and facility by default; baseUrl/subdomain/authToken/facility are optional overrides.',
     {
       apiId: z.string().optional(),
       baseUrl: z.string().url().optional(),
@@ -174,9 +192,10 @@ export function createUniwareMcpServer() {
       headers: z.record(z.string()).optional(),
       body: z.any().optional(),
       authToken: z.string().optional(),
+      facility: z.string().optional(),
       timeoutMs: z.number().int().min(1000).max(120000).optional().default(30000)
     },
-    async ({ apiId, baseUrl, subdomain, endpoint, method, query, headers, body, authToken, timeoutMs }) => {
+    async ({ apiId, baseUrl, subdomain, endpoint, method, query, headers, body, authToken, facility, timeoutMs }) => {
       const selected = apiId ? apiById.get(apiId) : null;
       if (apiId && !selected) {
         throw new Error(`Unknown apiId: ${apiId}`);
@@ -189,16 +208,16 @@ export function createUniwareMcpServer() {
         throw new Error('Endpoint not provided. Use endpoint directly or pick an apiId with a known endpoint.');
       }
 
-      const resolvedBaseUrl = normalizeBaseUrl({ baseUrl, subdomain });
-
-      const result = await callUniwareApi({
-        baseUrl: resolvedBaseUrl,
+      const result = await uniware.request({
+        baseUrl,
+        subdomain,
         endpoint: resolvedEndpoint,
         method: resolvedMethod,
         query,
         headers,
         body,
         authToken,
+        facility,
         timeoutMs
       });
 
@@ -212,7 +231,7 @@ export function createUniwareMcpServer() {
           category: selected?.category ?? null,
           method: result.method,
           endpoint: resolvedEndpoint,
-          baseUrl: resolvedBaseUrl
+          baseUrl: result.baseUrl
         },
         response: {
           ok: result.ok,
@@ -222,6 +241,54 @@ export function createUniwareMcpServer() {
           data: result.data
         }
       });
+    }
+  );
+
+  server.tool(
+    'uniware_search_sale_orders',
+    'Read-only. Search Uniware sale orders (POST /services/rest/v1/oms/saleOrder/search) with the relay\'s credentials. Filter by updatedSinceInMinutes, or fromDate/toDate (ISO 8601) on created or updated date, and status; page with displayStart/displayLength.',
+    {
+      updatedSinceInMinutes: z.number().int().min(1).optional(),
+      fromDate: z.string().optional().describe('ISO 8601 date/time, inclusive lower bound'),
+      toDate: z.string().optional().describe('ISO 8601 date/time, upper bound'),
+      dateType: z.enum(['CREATED', 'UPDATED']).optional().describe('Which date fromDate/toDate filter on (Uniware default: CREATED)'),
+      status: z.string().optional().describe('Sale order status, e.g. CREATED, PROCESSING, COMPLETE, CANCELLED'),
+      displayStart: z.number().int().min(0).optional().default(0),
+      displayLength: z.number().int().min(1).max(500).optional().default(50),
+      facility: z.string().optional()
+    },
+    READ_ONLY,
+    async ({ updatedSinceInMinutes, fromDate, toDate, dateType, status, displayStart, displayLength, facility }) => {
+      const body = { searchOptions: { displayStart, displayLength, getCount: true } };
+      if (updatedSinceInMinutes !== undefined) body.updatedSinceInMinutes = updatedSinceInMinutes;
+      if (fromDate) body.fromDate = toIsoDate(fromDate, 'fromDate');
+      if (toDate) body.toDate = toIsoDate(toDate, 'toDate');
+      if (dateType) body.dateType = dateType;
+      if (status) body.status = status;
+
+      return uniwareResult(
+        await uniware.request({ endpoint: '/services/rest/v1/oms/saleOrder/search', method: 'POST', body, facility })
+      );
+    }
+  );
+
+  server.tool(
+    'uniware_inventory_snapshot',
+    'Read-only. Get Uniware inventory snapshot (POST /services/rest/v1/inventory/inventorySnapshot/get) for the given SKUs and/or items updated in the last N minutes (max 1440).',
+    {
+      itemTypeSKUs: z.array(z.string().min(1)).max(10000).optional(),
+      updatedSinceInMinutes: z.number().int().min(0).max(1440).optional(),
+      facility: z.string().optional()
+    },
+    READ_ONLY,
+    async ({ itemTypeSKUs, updatedSinceInMinutes, facility }) => {
+      const body = {};
+      if (itemTypeSKUs?.length) body.itemTypeSKUs = itemTypeSKUs;
+      if (updatedSinceInMinutes !== undefined) body.updatedSinceInMinutes = updatedSinceInMinutes;
+
+      return uniwareResult(
+        await uniware.request({ endpoint: '/services/rest/v1/inventory/inventorySnapshot/get', method: 'POST', body, facility })
+      );
     }
   );
 
